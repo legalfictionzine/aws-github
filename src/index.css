@@ -1,13 +1,170 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Redaction-35;
+  src: url(./fonts/Redaction35-BWXjw.otf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Beton-Bold;
+  src: url(./fonts/BetonP-ExtBol.otf);
+}
+
+@font-face {
+  font-family: Beton-Open-Regular;
+  src: url(./fonts/BetonOpen-Regular.otf);
+}
+
+@font-face {
+  font-family: Junicode;
+  src: url(./fonts/Junicode.ttf);
+}
+
+@font-face {
+  font-family: Junicode-Italic;
+  src: url(./fonts/Junicode-Italic.ttf);
+}
+
+@font-face {
+  font-family: Junicode-Bold;
+  src: url(./fonts/Junicode-Bold.ttf);
+}
+
+@font-face {
+  font-family: Junicode-Bold-Italic;
+  src: url(./fonts/Junicode-BoldItalic.ttf);
+}
+
+#italicize {
+  font-family: Junicode-Italic;
+}
+
+body {
+  font-family: Junicode;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+}
+
+#sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 20px;
+}
+
+#issue-number {
+  margin: 10px;
+}
+
+#magazine-title-link {
+  text-decoration: none;
+  color: black;
+}
+
+#fixed-header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  margin-top: -20px;
+  padding: 20px;
+}
+
+#footer {
+
+}
+
+#about-page {
+  padding: 20px;
+  background-color: #fff44c;
+  height: 100%;
+}
+
+#submissions-page {
+  padding: 20px;
+  background-color: #fff44c;
+  height: 100vh;
+}
+
+#issue-number-and-date {
+}
+
+.page-title {
+  font-family: Beton-Bold;
+  font-size: 3em;
+}
+
+#about-text, #submissions-text {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#submission-title {
+  font-family: Beton-Open-Regular;
+}
+
+#submission-author {
+  font-family: Junicode-Italic;
+}
+
+#submission-footnote {
+  margin: 20px 0 20px 0;
+  font-family: Junicode-Italic;
+}
+
+#navigation-link {
+  font-family: Redaction-35;
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  color: black;
+}
+
+#navigation-link:hover {
+  background-color: blue;
+  color: white;
+}
+
+#magazine-title {
+  font-family: Redaction-35;
+  margin: 0;
+}
+
+#magazine-subtitle {
+  font-family: Junicode-Italic;
+  margin: 0;
+}
+
+#submission-image-large {
+  width: 70%;
+  height: auto;
+}
+
+#submission-image-medium {
+  width: 40%;
+  height: auto;
+}
+
+#submission-image-small {
+  width: 25%;
+  height: auto;
+}
+
+#navigation-bar {
+  margin-top: 40px;
+}
+
+img {
+  margin: 10px;
+}
+
+div[id|="submission-text-"] {
+  display: none;
+}
+
+/* Small devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  #about-text, #submissions-text {
+    width: 100%;
+  }
 }
