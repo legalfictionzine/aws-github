@@ -13,17 +13,21 @@ const Submission = ({submission, issueNumber}) => {
                 {submission.text.split(" ").length > 100 ?
                     <>
                         {displayedText}
-                        <button type="button" className="collapsible">Read more</button>
-                        <div id={"submission-text-" + submission.id}>
-                            {hiddenText}
+                        <div id={"wrap-collabsible"+submission.id}>
+                            <input id="collapsible" id={"toggle"+submission.id} type="checkbox"/>
+                            <label htmlFor="collapsible" id={"lbl-toggle-"+submission.id}>Read more</label>
+                            <div id={"collapsible-content"+submission.id}>
+                                <div id={"content-inner"+submission.id}><p>{hiddenText}</p>
+                                </div>
+                            </div>
                         </div>
                     </>
-                : <>{displayedText}</>
-                }
+                    : <>{displayedText}</>}
             </div>
             {
                 submission.images.map(image => (
-                    <img id={"submission-image-" + image.size} key={image.url} src={"/images/Issue " + issueNumber + "/" + image.url} alt={image.alt}/>
+                    <img id={"submission-image-" + image.size} key={image.url}
+                         src={"/images/Issue " + issueNumber + "/" + image.url} alt={image.alt}/>
                 ))
             }
             <div id="submission-footnote">{submission.footnote}</div>
