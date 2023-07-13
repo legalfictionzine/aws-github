@@ -33,6 +33,10 @@
   src: url(./fonts/Junicode-BoldItalic.ttf);
 }
 
+.container {
+  width: 100vw;
+}
+
 #italicize {
   font-family: Junicode-Italic;
 }
@@ -70,7 +74,7 @@ body {
 }
 
 #footer {
-
+  width: 30px;
 }
 
 #about-page {
@@ -82,7 +86,7 @@ body {
 #submissions-page {
   padding: 20px;
   background-color: #fff44c;
-  height: 100vh;
+
 }
 
 #issue-number-and-date {
@@ -123,6 +127,10 @@ body {
 #navigation-link:hover {
   background-color: blue;
   color: white;
+}
+
+#title {
+  margin-bottom: 20px;
 }
 
 #magazine-title {
