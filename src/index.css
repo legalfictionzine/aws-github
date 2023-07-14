@@ -92,6 +92,10 @@ body {
 #issue-number-and-date {
 }
 
+#pages {
+  z-index: 1000;
+}
+
 .page-title {
   font-family: Beton-Bold;
   font-size: 3em;
@@ -174,6 +178,9 @@ div[id|="submission-text-"] {
 @media (max-width: 768px) {
   #about-text, #submissions-text {
     width: 100%;
+  }
+  #pages {
+    margin-bottom: 20px; 
   }
 }
 

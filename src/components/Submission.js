@@ -11,21 +11,22 @@ const Submission = ({submission, issueNumber}) => {
                 <div className="span4 collapse-group">
                     {submission.id !== 2
                         ? submission.text.split(" ").length > 150 ?
-                        <>
-                        <p>{getFirst150Words(submission.text)}</p>
-                        <p>
-                        <a className="read-more" data-bs-toggle="collapse" href={"#collapse-"+submission.id}
-                        role="button"
-                        aria-expanded="false" aria-controls={"collapse-"+submission.id}>
-                        Read more &raquo;
-                        </a>
-                        </p>
-                        <div className="collapse" id={"collapse-"+submission.id}>
-                        <div className="card card-body">
-                    {getRestOfText(submission.text)}
-                        </div>
-                        </div>
-                        </> : <>{submission.text}</>
+                            <>
+                                <p>{getFirst150Words(submission.text)}</p>
+                                <p>
+                                    <a className="read-more" data-bs-toggle="collapse"
+                                       href={"#collapse-" + submission.id}
+                                       role="button"
+                                       aria-expanded="false" aria-controls={"collapse-" + submission.id}>
+                                        Read more &raquo;
+                                    </a>
+                                </p>
+                                <div className="collapse" id={"collapse-" + submission.id}>
+                                    <div className="card card-body">
+                                        {getRestOfText(submission.text)}
+                                    </div>
+                                </div>
+                            </> : <>{submission.text}</>
                         : <>{submission.text}</>
                     }
                 </div>
