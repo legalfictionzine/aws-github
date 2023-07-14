@@ -1,7 +1,7 @@
-const getFirst100Words = (text) => {
+const getFirst150Words = (text) => {
     let result = [];
     const textArray = text.split(" ");
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 150; i++) {
         result.push(textArray[i]);
     }
     return result.join(" ");
@@ -34,7 +34,7 @@ const addCollapseFunc = () => {
 }
 
 module.exports = {
-    getFirst100Words,
+    getFirst150Words,
     getRestOfText,
     addCollapseFunc
 }

@@ -16,7 +16,7 @@ const About = () => {
                     <b>Note on the Type:</b> Our title page is typeset in Redaction, a font  commissioned by Titus Kaphar and Reginald Dwayne Betts for their 2019 exhibition at MOMA PS1, The Redaction. The font borrows from classic legal typography; its pixelation is meant to represent how the legal system erases the poor and incarcerated from public  consciousness.<br/><br/>
                     <b>Editors:</b> <span id="italicize">Dylan Onderdonk-Snow, Ntebo Mokuena,    Megan  Dougherty, Evan Molineux, Sarah Marron, Kristin Abram, Maheen Haq, Ella Helmuth, David Snower</span>
                     <div className="d-flex justify-content-center">
-                        <img id="submission-image-medium" key="about-image" src="/images/img_4.png" alt="about the maga(zine)"/><br/>
+                        <img id="submission-image-large" key="about-image" src="https://i.ibb.co/zQWfG3N/img-4.png" alt="about the maga(zine)"/><br/>
                     </div>
                     <span id="italicize">The views expressed in this publication do not necessarily reflect those of the  administration, faculty, or student body of Georgetown University or Georgetown Law unless specifically stated.</span>
                 </div>
